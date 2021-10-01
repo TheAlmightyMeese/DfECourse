@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for i in "cat" "dog" "3" "hat" "sheep"
-do
-	echo $i
-done
