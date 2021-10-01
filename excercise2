@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd
+mkdir exer2
+cd exer2
+touch File1.txt
+touch File2.txt
+mv File1.txt /DfECourse/exer2
+mv File1.txt test1.txt
+mv File2.txt test2.sh
+echo '#!/bin/bash' >> test2.sh
+echo 'pwd' >> test2.sh
+./test2.sh
+

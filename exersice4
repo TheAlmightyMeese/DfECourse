@@ -1,0 +1,10 @@
+#!/bin/bash
+
+read -p "Please enter a file name: " filename
+
+if [ -n ${filename} ]
+then
+	echo "Huzzah! ${filename} exisits here: ";pwd
+else
+	echo "Sorry I was unable to find ${filename}"
+fi

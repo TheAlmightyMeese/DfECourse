@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Please enter a file name: " fname
+read -p "Please enter a Title for the file: " title
+if [ -e $( date "+%B-%Y" )/$fname$( date "+%d" ).md ]
+then
+	echo This file name already exisits
+else
+	mkdir $( date "+%B-%Y" )
+	cd $( date "+%B-%Y" )
+	touch $fname$( date "+%d" ).md
+	echo "#$title" >> $fname$( date "+%d").md
+	date >> $fname$( date "+%d").md
+fi

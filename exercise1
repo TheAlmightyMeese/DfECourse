@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "Please enter your username: " username
+
+if [ $username = $USERNAME ]
+then
+	echo " ${username} Is Logged in!"
+else
+	echo " ${username} is not Logged in"
+fi
+
